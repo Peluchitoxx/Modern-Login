@@ -47,7 +47,7 @@ body{
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: #4C90C0;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -161,9 +161,9 @@ body{
 }
 
 .toggle{
-    background-color: #512da8;
+    background-color: #4C90C0;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, #5c6bc0, #4C90C0);
     color: #fff;
     position: relative;
     left: -100%;
@@ -208,3 +208,36 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+.container span {
+    display: block;
+    float: left;
+    margin-bottom: 8px;
+  }
+  
+
+.container select {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    appearance: none; /* Quita la flecha predeterminada del select */
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7 10l5 5 5-5z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 24px;
+    padding-right: 32px; /* Ajusta el espacio para que quepa el ícono */
+  }
+  
+  .container select:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .container select:focus {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
